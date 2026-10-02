@@ -13,7 +13,7 @@ cv.html             HTML CV, with a link to the PDF
 robots.txt          Crawler rules (see Preview mode)
 assets/css/style.css
 assets/js/site.js   Abstract / citation toggles and BibTeX copy
-assets/img/         Favicon, portrait.jpg (light) and portrait-dark.jpg (dark theme)
+assets/img/         Favicon, portrait.jpg (light) and portrait-dark.webp (dark theme)
 assets/files/       Antonio_Eugenelo_CV.pdf
 ```
 
@@ -65,8 +65,8 @@ Pages IPs). Tick *Enforce HTTPS* once the certificate is issued.
 - **Add a paper**: copy an `<article class="paper">` block in `research.html`.
   Each toggle button's `aria-controls` must match the `id` of its panel.
 - **Change the portrait**: replace `assets/img/portrait.jpg` (4:5, 640×800 px)
-  and its dark-theme version `portrait-dark.jpg` (same photo on a charcoal
-  backdrop, `#22211e`).
+  and its dark-theme version `portrait-dark.webp` (same photo with the
+  backdrop made transparent).
 - **"Last updated"** lives in the footer of each page.
 
 To preview locally, open `index.html` in a browser, or run
