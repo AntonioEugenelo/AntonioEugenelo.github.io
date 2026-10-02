@@ -1,0 +1,4 @@
+# PREVIEW: pages carry a noindex tag; the CV PDF cannot, so keep crawlers away from it.
+# At launch, delete the Disallow line below.
+User-agent: *
+Disallow: /assets/files/
