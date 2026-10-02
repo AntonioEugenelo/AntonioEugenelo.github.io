@@ -145,6 +145,8 @@ em, i { font-style: italic; }
 
 .site-nav {
   display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
   gap: 1.75rem;
 }
 .site-nav a {
@@ -157,6 +159,20 @@ em, i { font-style: italic; }
 .site-nav a[aria-current="page"] {
   color: var(--ink);
   border-bottom-color: var(--ink);
+}
+.site-nav .language-switch {
+  color: var(--accent);
+  border: 1px solid var(--rule-strong);
+  padding: 0.12rem 0.55rem;
+  border-radius: 2px;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.site-nav .language-switch:hover {
+  background: var(--accent-wash);
+  border-color: var(--accent);
 }
 
 /* ---------- Masthead ---------- */
@@ -288,7 +304,7 @@ em, i { font-style: italic; }
   row-gap: 0.55rem;
 }
 .contact dt { color: var(--muted); font-size: 0.95rem; padding-top: 0.1rem; }
-.contact dd { margin: 0; }
+.contact dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .contact address { font-style: normal; }
 
 /* ---------- Papers ---------- */
@@ -458,8 +474,9 @@ em, i { font-style: italic; }
 
   .portrait { max-width: 9rem; margin: 0 0 1.75rem; }
 
-  .site-header { padding-top: 1.4rem; }
-  .site-nav { gap: 1.25rem; }
+  .site-header { padding-top: 1.4rem; flex-wrap: wrap; gap: 0.75rem; }
+  .site-header .home-link[aria-current="page"] { display: none; }
+  .site-nav { gap: 0.5rem 1.25rem; margin-left: auto; justify-content: flex-end; }
 
   .entry,
   .contact { grid-template-columns: 4.75rem minmax(0, 1fr); column-gap: 1rem; }

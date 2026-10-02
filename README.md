@@ -15,7 +15,21 @@ assets/css/style.css
 assets/js/site.js   Abstract / citation toggles and BibTeX copy
 assets/img/         Favicon, portrait.jpg (light) and portrait-dark.webp (dark theme)
 assets/files/       Antonio_Eugenelo_CV.pdf
+it/                Italian About, Research, CV and not-found pages
 ```
+
+## Languages
+
+The header's **Italiano / English** button opens the same page in the other
+language. Italian pages live in `it/`, share the existing stylesheet, images,
+scripts and CV PDF, and keep navigation in Italian. Links to individual papers
+and sections are preserved when switching language with JavaScript enabled;
+the page-level switch also works without JavaScript.
+
+The Italian pages translate the biography, research summaries and abstracts,
+teaching, experience and HTML CV. Official paper and course titles remain in
+their original English; the downloadable CV PDF is also in English.
+When changing content, update both language versions.
 
 ## Publishing on GitHub Pages
 
