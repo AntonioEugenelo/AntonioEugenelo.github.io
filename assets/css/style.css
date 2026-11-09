@@ -164,7 +164,7 @@ em, i { font-style: italic; }
 /* ---------- Masthead ---------- */
 
 .masthead {
-  padding: 5.5rem 0 3rem;
+  padding: 2.25rem 0 2.75rem;
 }
 /* Name and role end level with the bottom of the portrait. */
 .masthead > div:last-child { align-self: end; }
@@ -195,7 +195,7 @@ em, i { font-style: italic; }
 }
 
 .portrait {
-  margin: 0.75rem 0 0;
+  margin: 0;
 }
 .portrait img {
   display: block;
