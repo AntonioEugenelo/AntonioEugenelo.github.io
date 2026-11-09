@@ -160,20 +160,6 @@ em, i { font-style: italic; }
   color: var(--ink);
   border-bottom-color: var(--ink);
 }
-.site-nav .language-switch {
-  color: var(--accent);
-  border: 1px solid var(--rule-strong);
-  padding: 0.12rem 0.55rem;
-  border-radius: 2px;
-  text-transform: none;
-  letter-spacing: 0.02em;
-  font-size: 0.85rem;
-  white-space: nowrap;
-}
-.site-nav .language-switch:hover {
-  background: var(--accent-wash);
-  border-color: var(--accent);
-}
 
 /* ---------- Masthead ---------- */
 
@@ -215,31 +201,6 @@ em, i { font-style: italic; }
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-}
-
-/* A quiet hairline ornament under the name. */
-.ornament {
-  margin: 2.5rem 0 0;
-}
-.ornament svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  overflow: visible;
-}
-.ornament .baseline { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 2 4; }
-.ornament .path     { stroke: var(--rule-strong); stroke-width: 1.1; }
-.ornament line,
-.ornament path { fill: none; stroke-linejoin: round; stroke-linecap: round; }
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .ornament .path {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    animation: draw 2.6s cubic-bezier(0.45, 0, 0.2, 1) 0.35s forwards;
-  }
-  @keyframes draw { to { stroke-dashoffset: 0; } }
 }
 
 /* ---------- Sections ---------- */
@@ -487,7 +448,7 @@ em, i { font-style: italic; }
 @media print {
   :root { --paper: #fff; --ink: #000; --muted: #444; --accent: #000; }
   body { font-size: 10.5pt; }
-  .site-nav, .ornament, .skip, .actions button, .bibtex .copy { display: none; }
+  .site-nav, .skip, .actions button, .bibtex .copy { display: none; }
   .js .panel { grid-template-rows: 1fr; }
   .js .panel > .panel-inner { visibility: visible; }
   .masthead { padding: 1rem 0; }
