@@ -10,7 +10,8 @@ index.html          About, fields, current work, teaching, contact
 research.html       Papers, abstracts, citations, policy work, writing
 cv.html             HTML CV, with a link to the PDF
 404.html            Not-found page
-robots.txt          Crawler rules (see Preview mode)
+robots.txt          Crawler rules
+sitemap.xml         Page list for search engines
 assets/css/style.css
 assets/js/site.js   Abstract / citation toggles and BibTeX copy
 assets/img/         Favicon and portrait.jpg
@@ -30,25 +31,12 @@ git commit -m "Describe the change"
 git push
 ```
 
-## Preview mode (current state)
+## Search engines
 
-The site is reachable by anyone with the link but asks search engines to stay
-away:
-
-- every page carries `<meta name="robots" content="noindex, nofollow">`
-  (marked `PREVIEW` in the source);
-- `robots.txt` keeps crawlers out of `assets/files/`, because the CV PDF
-  cannot carry a noindex tag.
-
-GitHub Pages has no password protection, so this is "unlisted", not private.
-
-### Going public
-
-1. Delete the line marked `PREVIEW` in `index.html`, `research.html`,
-   `cv.html` and `404.html`.
-2. Delete the `Disallow:` line in `robots.txt`.
-3. Commit and push. Optionally submit the site in Google Search Console
-   to speed up indexing.
+The site has been public since 9 November 2026. `robots.txt` allows all
+crawlers and points to `sitemap.xml`; update the `lastmod` dates there after
+substantial changes. Only `404.html` carries a `noindex` tag. To speed up
+indexing, add the site in Google Search Console and submit the sitemap.
 
 ### Custom domain (optional)
 
